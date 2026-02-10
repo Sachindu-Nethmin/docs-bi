@@ -1,4 +1,4 @@
-setuptools==68.0.0
+setuptools==78.1.1
 mkdocs==1.4.2
 Pygments==2.14.0
 mkdocs-material==9.1.2
