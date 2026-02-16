@@ -12,27 +12,27 @@
         <meta name="author" content="WSO2">
       
       
-        <link rel="canonical" href="https://bi.docs.wso2.com/developer-guides/data-mapping/">
+        <link rel="canonical" href="https://bi.docs.wso2.com/integration-guides/usecases/tcp-chat-service/build-a-tcp-chat-service/">
       
       
-        <link rel="prev" href="../design-the-integrations/">
+        <link rel="prev" href="../../datamapper/read-csv-file-and-transform-to-xml-file/">
       
       
-        <link rel="next" href="../try-the-integration/">
+        <link rel="next" href="../../../../developer-guides/create-integrations/overview/">
       
-      <link rel="icon" href="../../assets/img/favicon.png">
+      <link rel="icon" href="../../../../assets/img/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
     
     
       
-        <title>Data Mapping - WSO2 Integrator: BI Documentation</title>
+        <title>TCP Chat Service - WSO2 Integrator: BI Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7bf56d0a.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7bf56d0a.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -42,11 +42,11 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/lib/highlightjs/default.min.css">
+      <link rel="stylesheet" href="../../../../assets/lib/highlightjs/default.min.css">
     
-      <link rel="stylesheet" href="../../assets/css/theme.css">
+      <link rel="stylesheet" href="../../../../assets/css/theme.css">
     
-      <link rel="stylesheet" href="../../assets/lib/json-formatter/json-formatter.css">
+      <link rel="stylesheet" href="../../../../assets/lib/json-formatter/json-formatter.css">
     
     <!-- Fix for HTML files loads with wrong resource relative paths when the trailing slash is missing -->
 <script>
@@ -57,7 +57,7 @@
     }
 </script>
 
-<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 
 <!-- Google Tag Manager -->
 <script>
@@ -84,11 +84,11 @@
 <!-- End Google Tag Manager -->
 
 
-<script src="../../assets/lib/json-formatter/json-formatter.umd.js"></script>
+<script src="../../../../assets/lib/json-formatter/json-formatter.umd.js"></script>
 
-<script src="../../assets/lib/highlightjs/highlight.min.js"></script>
+<script src="../../../../assets/lib/highlightjs/highlight.min.js"></script>
 
-<script src="../../assets/js/theme.js"></script>
+<script src="../../../../assets/js/theme.js"></script>
 
     
 <!-- Google Tag Manager -->
@@ -129,7 +129,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#data-mapping" class="md-skip">
+        <a href="#build-a-tcp-chat-service" class="md-skip">
           Skip to content
         </a>
       
@@ -163,7 +163,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header" id="page-header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="WSO2 Integrator: BI Documentation" class="md-header__button md-logo" aria-label="WSO2 Integrator: BI Documentation" data-md-component="logo">
+    <a href="../../../.." title="WSO2 Integrator: BI Documentation" class="md-header__button md-logo" aria-label="WSO2 Integrator: BI Documentation" data-md-component="logo">
       <!--
  * Copyright (c) 2023, WSO2 LLC. (https://www.wso2.com).
  *
@@ -184,10 +184,10 @@
 
 
     
-        <img src="../../assets/img/logo-for-light.svg" alt="logo" data-md-component="logo" data-md-color="default">
+        <img src="../../../../assets/img/logo-for-light.svg" alt="logo" data-md-component="logo" data-md-color="default">
     
     
-        <img src="../../assets/img/logo.svg" alt="logo" data-md-component="logo" data-md-color="slate">
+        <img src="../../../../assets/img/logo.svg" alt="logo" data-md-component="logo" data-md-color="slate">
     
 
     </a>
@@ -205,7 +205,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data Mapping
+              TCP Chat Service
             
           </span>
         </div>
@@ -377,7 +377,7 @@
  * under the License.
 -->
 
-<link rel="stylesheet" href="../../assets/css/report-issues.css">
+<link rel="stylesheet" href="../../../../assets/css/report-issues.css">
 
 <div class="report-issues-fixed">
   <button class="md-typeset md-button md-button--small md-button--flex md-button--report-issues"
@@ -441,7 +441,7 @@
   <!-- Site title -->
   <label class="md-nav__title" for="__drawer">
     <a
-      href="../.."
+      href="../../../.."
       title="WSO2 Integrator: BI Documentation"
       class="md-nav__button md-logo"
       aria-label="WSO2 Integrator: BI Documentation"
@@ -467,10 +467,10 @@
 
 
     
-        <img src="../../assets/img/logo-for-light.svg" alt="logo" data-md-component="logo" data-md-color="default">
+        <img src="../../../../assets/img/logo-for-light.svg" alt="logo" data-md-component="logo" data-md-color="default">
     
     
-        <img src="../../assets/img/logo.svg" alt="logo" data-md-component="logo" data-md-color="slate">
+        <img src="../../../../assets/img/logo.svg" alt="logo" data-md-component="logo" data-md-color="slate">
     
 
     </a>
@@ -557,7 +557,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../.." class="md-nav__link">
+  <a href="../../../.." class="md-nav__link">
     <span>
       
       
@@ -779,7 +779,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../get-started/quick-start-guide/" class="md-nav__link">
+  <a href="../../../../get-started/quick-start-guide/" class="md-nav__link">
     <span>
       
       Quick Start Guide
@@ -821,7 +821,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../get-started/install-wso2-integrator-bi/" class="md-nav__link">
+  <a href="../../../../get-started/install-wso2-integrator-bi/" class="md-nav__link">
     <span>
       
       Install WSO2 Integrator: BI
@@ -986,7 +986,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../get-started/develop-automation/" class="md-nav__link">
+  <a href="../../../../get-started/develop-automation/" class="md-nav__link">
     <span>
       
       Develop Automation
@@ -1028,7 +1028,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../get-started/develop-ai-agent/" class="md-nav__link">
+  <a href="../../../../get-started/develop-ai-agent/" class="md-nav__link">
     <span>
       
       Develop AI Agent
@@ -1070,7 +1070,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../get-started/develop-integration-as-api/" class="md-nav__link">
+  <a href="../../../../get-started/develop-integration-as-api/" class="md-nav__link">
     <span>
       
       Develop Integration as API
@@ -1112,7 +1112,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../get-started/develop-event-integration/" class="md-nav__link">
+  <a href="../../../../get-started/develop-event-integration/" class="md-nav__link">
     <span>
       
       Develop Event Integration
@@ -1154,7 +1154,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../get-started/develop-file-integration/" class="md-nav__link">
+  <a href="../../../../get-started/develop-file-integration/" class="md-nav__link">
     <span>
       
       Develop File Integration
@@ -1231,6 +1231,8 @@
 
 
 
+
+
 <!-- Set nav icon -->
 
 
@@ -1283,7 +1285,7 @@
 
 
 <!-- Render item with nested items -->
-<li class="md-nav__item md-nav--expanded-section md-nav--expanded-section-verticle-line md-nav__item--nested md-nav--has-icon ">
+<li class="md-nav__item md-nav__item--active md-nav--expanded-section md-nav--expanded-section-verticle-line md-nav__item--nested md-nav--has-icon ">
   
   
 
@@ -1362,7 +1364,7 @@
         class="md-nav"
         data-md-level="1"
         aria-labelledby="__nav_3_label"
-        aria-expanded="false"
+        aria-expanded="true"
       >
     <label class="md-nav__title" for="__nav_3">
       <span class="md-nav__icon md-icon"></span>
@@ -1638,7 +1640,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../integration-guides/ai/natural-functions/natural-functions/" class="md-nav__link">
+  <a href="../../../ai/natural-functions/natural-functions/" class="md-nav__link">
     <span>
       
       Natural functions(Beta)
@@ -1680,7 +1682,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../integration-guides/ai/direct-llm-call/direct-llm-invocation-with-ballerina-model-providers/" class="md-nav__link">
+  <a href="../../../ai/direct-llm-call/direct-llm-invocation-with-ballerina-model-providers/" class="md-nav__link">
     <span>
       
       Model providers
@@ -1853,7 +1855,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../integration-guides/ai/rag/rag-ingestion/" class="md-nav__link">
+  <a href="../../../ai/rag/rag-ingestion/" class="md-nav__link">
     <span>
       
       Rag Ingestion
@@ -1895,7 +1897,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../integration-guides/ai/rag/rag-query/" class="md-nav__link">
+  <a href="../../../ai/rag/rag-query/" class="md-nav__link">
     <span>
       
       Rag Query
@@ -2015,7 +2017,7 @@
   
   
   <div class="md-nav__link md-nav__link--index ">
-    <a href="../../integration-guides/ai/agents/">
+    <a href="../../../ai/agents/">
       <span>
         
         Agents
@@ -2080,7 +2082,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../integration-guides/ai/agents/introduction-to-chat-agents/" class="md-nav__link">
+  <a href="../../../ai/agents/introduction-to-chat-agents/" class="md-nav__link">
     <span>
       
       Introduction to Chat Agents
@@ -2122,7 +2124,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../integration-guides/ai/agents/introduction-to-inline-agents/" class="md-nav__link">
+  <a href="../../../ai/agents/introduction-to-inline-agents/" class="md-nav__link">
     <span>
       
       Introduction to Inline Agents
@@ -2164,7 +2166,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../integration-guides/ai/agents/integrating-agents-with-mcp-servers/" class="md-nav__link">
+  <a href="../../../ai/agents/integrating-agents-with-mcp-servers/" class="md-nav__link">
     <span>
       
       Integrating Agents with MCP Servers
@@ -2206,7 +2208,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../integration-guides/ai/agents/integrating-agents-with-external-endpoints/" class="md-nav__link">
+  <a href="../../../ai/agents/integrating-agents-with-external-endpoints/" class="md-nav__link">
     <span>
       
       Integrating Agents with External Endpoints
@@ -2262,7 +2264,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../integration-guides/ai/mcp-service/mcp-service/" class="md-nav__link">
+  <a href="../../../ai/mcp-service/mcp-service/" class="md-nav__link">
     <span>
       
       MCP Service
@@ -2437,7 +2439,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../integration-guides/integration-as-api/service-orchestration/" class="md-nav__link">
+  <a href="../../../integration-as-api/service-orchestration/" class="md-nav__link">
     <span>
       
       Service Orchestration
@@ -2479,7 +2481,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../integration-guides/integration-as-api/message-transformation/" class="md-nav__link">
+  <a href="../../../integration-as-api/message-transformation/" class="md-nav__link">
     <span>
       
       Message Transformation
@@ -2521,7 +2523,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../integration-guides/integration-as-api/message-routing/" class="md-nav__link">
+  <a href="../../../integration-as-api/message-routing/" class="md-nav__link">
     <span>
       
       Message Routing
@@ -2692,7 +2694,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../integration-guides/file-integration/file-integration-with-directory-service/" class="md-nav__link">
+  <a href="../../../file-integration/file-integration-with-directory-service/" class="md-nav__link">
     <span>
       
       File Integration With Directory Service
@@ -2978,7 +2980,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../integration-guides/event-integration/cdc/fraud-detection-system-with-cdc-for-mssql/" class="md-nav__link">
+  <a href="../../../event-integration/cdc/fraud-detection-system-with-cdc-for-mssql/" class="md-nav__link">
     <span>
       
       Fraud Detection System with CDC for Microsoft SQL Server
@@ -3029,6 +3031,8 @@
 
 
 
+
+
 <!-- Set nav icon -->
 
 
@@ -3065,7 +3069,7 @@
 
 
 <!-- Render item with nested items -->
-<li class="md-nav__item md-nav__item--nested  ">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested  ">
   
   
 
@@ -3085,13 +3089,15 @@
       class="md-nav__toggle md-toggle "
       type="checkbox"
       id="__nav_3_5"
-      
+      checked
       
     />
 
   <!-- Determine all nested items that are index pages -->
   
   
+    
+      
     
       
     
@@ -3127,7 +3133,7 @@
         class="md-nav"
         data-md-level="2"
         aria-labelledby="__nav_3_5_label"
-        aria-expanded="false"
+        aria-expanded="true"
       >
     <label class="md-nav__title" for="__nav_3_5">
       <span class="md-nav__icon md-icon"></span>
@@ -3165,7 +3171,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../integration-guides/usecases/integration-service-as-a-managed-api/expose-an-integration-service-as-a-managed-api/" class="md-nav__link">
+  <a href="../../integration-service-as-a-managed-api/expose-an-integration-service-as-a-managed-api/" class="md-nav__link">
     <span>
       
       Expose an Integration Service as a Managed API
@@ -3324,7 +3330,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../integration-guides/usecases/datamapper/overview/" class="md-nav__link">
+  <a href="../../datamapper/overview/" class="md-nav__link">
     <span>
       
       Overview
@@ -3366,7 +3372,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../integration-guides/usecases/datamapper/read-csv-file-and-transform-to-xml-file/" class="md-nav__link">
+  <a href="../../datamapper/read-csv-file-and-transform-to-xml-file/" class="md-nav__link">
     <span>
       
       Read a CSV File and Transform It to an XML File
@@ -3389,6 +3395,478 @@
 </li>
 
 <!-- Currently active page -->
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item md-nav__item--active">
+  
+
+  <!-- Active checkbox expands items contained within nested section -->
+      <input
+        class="md-nav__toggle md-toggle"
+        type="checkbox"
+        id="__toc"
+      />
+
+      <!-- Hack: see partials/toc.html for more information -->
+      
+      
+        
+      
+
+      <!-- Render table of contents, if not empty -->
+      
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        TCP Chat Service
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      
+      <a
+        href="./"
+        class="md-nav__link md-nav__link--active"
+      >
+    <span>
+      
+      TCP Chat Service
+      
+    </span>
+    
+  </a>
+
+  <!-- Show table of contents -->
+  
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-this-use-case" class="md-nav__link">
+    Why this use case
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-create-a-new-integration-project" class="md-nav__link">
+    Step 1: Create a new integration project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-create-the-tcp-service" class="md-nav__link">
+    Step 2: Create the TCP service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-rename-the-service-and-add-a-class-variable" class="md-nav__link">
+    Step 3: Rename the service and add a class variable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-implement-the-onconnect-logic" class="md-nav__link">
+    Step 4: Implement the onConnect logic
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 4: Implement the onConnect logic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#declare-the-welcome-prompt-variable" class="md-nav__link">
+    Declare the welcome prompt variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-the-prompt-to-the-caller" class="md-nav__link">
+    Send the prompt to the caller
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-the-return-statement" class="md-nav__link">
+    Update the return statement
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-convert-incoming-bytes-to-string" class="md-nav__link">
+    Step 5: Convert incoming bytes to string
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 5: Convert incoming bytes to string">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-a-function-call-node" class="md-nav__link">
+    Add a function call node
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select-the-conversion-function" class="md-nav__link">
+    Select the conversion function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-function-parameters" class="md-nav__link">
+    Configure the function parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-declare-a-variable-for-the-message" class="md-nav__link">
+    Step 6: Declare a variable for the message
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 6: Declare a variable for the message">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-a-variable-node" class="md-nav__link">
+    Add a variable node
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-variable-details" class="md-nav__link">
+    Configure the variable details
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-handle-new-user-registration" class="md-nav__link">
+    Step 7: Handle new user registration
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 7: Handle new user registration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-a-conditional-check" class="md-nav__link">
+    Add a conditional check
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-the-update-logic" class="md-nav__link">
+    Add the update logic
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-assign-the-username" class="md-nav__link">
+    Step 8: Assign the username
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 8: Assign the username">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-the-update-logic_1" class="md-nav__link">
+    Add the update logic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-variable-update" class="md-nav__link">
+    Configure the variable update
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-log-the-new-client-connection" class="md-nav__link">
+    Step 9: Log the new client connection
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 9: Log the new client connection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-the-log-node" class="md-nav__link">
+    Add the log node
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-log-expression" class="md-nav__link">
+    Configure the log expression
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-log-the-welcome-message" class="md-nav__link">
+    Step 10: Log the welcome message
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 10: Log the welcome message">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-the-log-node_1" class="md-nav__link">
+    Add the log node
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-log-expression_1" class="md-nav__link">
+    Configure the log expression
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-11-prompt-the-user-for-input" class="md-nav__link">
+    Step 11: Prompt the user for input
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 11: Prompt the user for input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-the-write-action" class="md-nav__link">
+    Add the write action
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-prompt-message" class="md-nav__link">
+    Configure the prompt message
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-12-terminate-the-execution-flow" class="md-nav__link">
+    Step 12: Terminate the execution flow
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 12: Terminate the execution flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-the-return-statement" class="md-nav__link">
+    Add the return statement
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-13-log-the-chat-message" class="md-nav__link">
+    Step 13: Log the chat message
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 13: Log the chat message">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-the-log-node_2" class="md-nav__link">
+    Add the log node
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-log-message" class="md-nav__link">
+    Configure the log message
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-14-send-an-acknowledgment-to-the-client" class="md-nav__link">
+    Step 14: Send an acknowledgment to the client
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 14: Send an acknowledgment to the client">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-the-write-action_1" class="md-nav__link">
+    Add the write action
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-acknowledgment-message" class="md-nav__link">
+    Configure the acknowledgment message
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-15-run-and-test-the-application" class="md-nav__link">
+    Step 15: Run and test the application
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 15: Run and test the application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-the-application" class="md-nav__link">
+    Run the application
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-the-chat-flow" class="md-nav__link">
+    Test the chat flow
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+  
+</li>
+
+<!-- Main navigation item -->
 
 
       
@@ -3457,8 +3935,6 @@
 
 
 
-
-
 <!-- Set nav icon -->
 
 
@@ -3501,7 +3977,7 @@
 
 
 <!-- Render item with nested items -->
-<li class="md-nav__item md-nav__item--active md-nav__item--nested md-nav--has-icon ">
+<li class="md-nav__item md-nav__item--nested md-nav--has-icon ">
   
   
 
@@ -3521,7 +3997,7 @@
       class="md-nav__toggle md-toggle "
       type="checkbox"
       id="__nav_4"
-      checked
+      
       
     />
 
@@ -3586,7 +4062,7 @@
         class="md-nav"
         data-md-level="1"
         aria-labelledby="__nav_4_label"
-        aria-expanded="true"
+        aria-expanded="false"
       >
     <label class="md-nav__title" for="__nav_4">
       <span class="md-nav__icon md-icon"></span>
@@ -3743,7 +4219,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../create-integrations/overview/" class="md-nav__link">
+  <a href="../../../../developer-guides/create-integrations/overview/" class="md-nav__link">
     <span>
       
       Overview
@@ -3785,7 +4261,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../create-integrations/create-an-integration/" class="md-nav__link">
+  <a href="../../../../developer-guides/create-integrations/create-an-integration/" class="md-nav__link">
     <span>
       
       Create an Integration
@@ -3827,7 +4303,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../create-integrations/manage-integrations-in-workspaces/" class="md-nav__link">
+  <a href="../../../../developer-guides/create-integrations/manage-integrations-in-workspaces/" class="md-nav__link">
     <span>
       
       Manage Integrations in Workspaces
@@ -3883,7 +4359,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../wso2-integrator-bi-artifacts/" class="md-nav__link">
+  <a href="../../../../developer-guides/wso2-integrator-bi-artifacts/" class="md-nav__link">
     <span>
       
       WSO2 Integrator: BI Artifacts
@@ -3925,7 +4401,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../design-the-integrations/" class="md-nav__link">
+  <a href="../../../../developer-guides/design-the-integrations/" class="md-nav__link">
     <span>
       
       Design the Integrations
@@ -3942,8 +4418,6 @@
       
 
 <!-- Determine class according to state -->
-
-
 
 
 
@@ -3968,162 +4442,133 @@
 
 <!-- Main navigation item with nested items -->
 
-<li class="md-nav__item md-nav__item--active">
+
+<!-- Determine whether to render item as a section -->
+
+
+
+
+
+
+
+
+
+<!-- Set css class if there is an icon -->
+
+
+<!-- Override navigation if configured  -->
+
+
+<!-- Render item with nested items -->
+<li class="md-nav__item md-nav__item--nested  ">
+  
+  
+
+  <!-- For expanded sections, we want them to start checked (expanded) -->
+  
+  
+  
+  
+  
+  
+
+  <!-- Determine checked and indeterminate state -->
   
 
   <!-- Active checkbox expands items contained within nested section -->
-      <input
-        class="md-nav__toggle md-toggle"
-        type="checkbox"
-        id="__toc"
-      />
+    <input
+      class="md-nav__toggle md-toggle "
+      type="checkbox"
+      id="__nav_4_4"
+      
+      
+    />
 
-      <!-- Hack: see partials/toc.html for more information -->
+  <!-- Determine all nested items that are index pages -->
+  
+  
+    
       
+    
       
-        
-      
+    
+  
 
-      <!-- Render table of contents, if not empty -->
-      
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Data Mapping
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      
-      <a
-        href="./"
-        class="md-nav__link md-nav__link--active"
-      >
+  <!-- Render toggle to expand nested items -->
+  
+    <label
+      class="md-nav__link " 
+      for="__nav_4_4"
+      id="__nav_4_4_label"
+      tabindex="0"
+    >
     <span>
       
       Data Mapping
       
+      
+    </span>
+    
+    <span class="md-nav__icon md-icon"></span>
+    
+  </label>
+
+  <!-- Render link to index page + toggle -->
+  
+
+  <!-- Render nested navigation -->
+  
+      <nav
+        class="md-nav"
+        data-md-level="2"
+        aria-labelledby="__nav_4_4_label"
+        aria-expanded="false"
+      >
+    <label class="md-nav__title" for="__nav_4_4">
+      <span class="md-nav__icon md-icon"></span>
+      Data Mapping
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      <!-- Render nested item list -->
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="../../../../developer-guides/data-mapping/manual-data-mapping/" class="md-nav__link">
+    <span>
+      
+      Manual Data Mapping
+      
     </span>
     
   </a>
-
-  <!-- Show table of contents -->
-  
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#step-1-create-a-new-integration-project" class="md-nav__link">
-    Step 1: Create a new integration project
-  </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-create-an-http-service" class="md-nav__link">
-    Step 2: Create an HTTP service
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-add-the-resource-method" class="md-nav__link">
-    Step 3: Add the resource method
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-5-add-a-reusable-data-mapper" class="md-nav__link">
-    Step 5: Add a reusable data mapper
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-6-optional-add-an-inline-data-mapper" class="md-nav__link">
-    Step 6 (Optional): Add an inline data mapper
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-7-create-mappings" class="md-nav__link">
-    Step 7: Create mappings
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 7: Create mappings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#create-simple-mapping" class="md-nav__link">
-    Create simple mapping
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#auto-mapping" class="md-nav__link">
-    Auto mapping
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#many-to-one-mapping" class="md-nav__link">
-    Many-to-one mapping
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#edit-mapping-expression" class="md-nav__link">
-    Edit mapping expression
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#array-mapping" class="md-nav__link">
-    Array mapping
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-8-return-the-transformed-payload" class="md-nav__link">
-    Step 8: Return the transformed payload
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-9-run-the-integration" class="md-nav__link">
-    Step 9: Run the integration
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-  
-</li>
-
-<!-- Main navigation item -->
 
 
       
@@ -4157,7 +4602,63 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../try-the-integration/" class="md-nav__link">
+  <a href="../../../../developer-guides/data-mapping/ai-data-mapping/" class="md-nav__link">
+    <span>
+      
+      AI Data Mapping
+      
+    </span>
+    
+  </a>
+</li>
+
+
+      
+      
+    </ul>
+  </nav>
+  
+
+  <!-- Sub nav override links -->
+  
+
+</li>
+
+<!-- Currently active page -->
+
+
+      
+      
+      
+      
+
+<!-- Determine class according to state -->
+
+
+
+
+
+
+<!-- Set nav icon -->
+
+
+
+
+<!-- Set nav chip -->
+
+
+
+
+<!-- Create new map with expanded_nav titles -->
+
+
+<!-- Hide navigation if configured  -->
+
+
+<!-- Main navigation item with nested items -->
+
+<li class="md-nav__item ">
+  <a href="../../../../developer-guides/try-the-integration/" class="md-nav__link">
     <span>
       
       Try the Integration
@@ -4199,7 +4700,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../test-the-integrations/" class="md-nav__link">
+  <a href="../../../../developer-guides/test-the-integrations/" class="md-nav__link">
     <span>
       
       Testing
@@ -4364,7 +4865,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../debugging-and-troubleshooting/overview/" class="md-nav__link">
+  <a href="../../../../developer-guides/debugging-and-troubleshooting/overview/" class="md-nav__link">
     <span>
       
       Overview
@@ -4406,7 +4907,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../debugging-and-troubleshooting/debugging-within-the-editor/" class="md-nav__link">
+  <a href="../../../../developer-guides/debugging-and-troubleshooting/debugging-within-the-editor/" class="md-nav__link">
     <span>
       
       Debugging within the Editor
@@ -4448,7 +4949,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../debugging-and-troubleshooting/remote-debugging-integrations/" class="md-nav__link">
+  <a href="../../../../developer-guides/debugging-and-troubleshooting/remote-debugging-integrations/" class="md-nav__link">
     <span>
       
       Remote Debugging Integrations
@@ -4490,7 +4991,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../debugging-and-troubleshooting/capturing-strand-dumps/" class="md-nav__link">
+  <a href="../../../../developer-guides/debugging-and-troubleshooting/capturing-strand-dumps/" class="md-nav__link">
     <span>
       
       Capturing Strand Dumps
@@ -4532,7 +5033,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../debugging-and-troubleshooting/profiling-runtime-performance/" class="md-nav__link">
+  <a href="../../../../developer-guides/debugging-and-troubleshooting/profiling-runtime-performance/" class="md-nav__link">
     <span>
       
       Profiling Runtime Performance
@@ -4703,7 +5204,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../ai-for-integration/build-an-http-service-with-wso2-copilot/" class="md-nav__link">
+  <a href="../../../../developer-guides/ai-for-integration/build-an-http-service-with-wso2-copilot/" class="md-nav__link">
     <span>
       
       Build an HTTP Service With BI Copilot
@@ -4876,7 +5377,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../protocols-and-connectors/overview-of-connectors/" class="md-nav__link">
+  <a href="../../../../developer-guides/protocols-and-connectors/overview-of-connectors/" class="md-nav__link">
     <span>
       
       Overview of Connectors
@@ -4918,7 +5419,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../protocols-and-connectors/supported-protocols/" class="md-nav__link">
+  <a href="../../../../developer-guides/protocols-and-connectors/supported-protocols/" class="md-nav__link">
     <span>
       
       Supported Protocols
@@ -5214,7 +5715,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../tools/migration-tools/overview/" class="md-nav__link">
+  <a href="../../../../developer-guides/tools/migration-tools/overview/" class="md-nav__link">
     <span>
       
       Overview
@@ -5256,7 +5757,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../tools/migration-tools/mulesoft-migration-tool/" class="md-nav__link">
+  <a href="../../../../developer-guides/tools/migration-tools/mulesoft-migration-tool/" class="md-nav__link">
     <span>
       
       Mulesoft Migration Tool
@@ -5298,7 +5799,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../tools/migration-tools/tibco-businessworks-migration-tool/" class="md-nav__link">
+  <a href="../../../../developer-guides/tools/migration-tools/tibco-businessworks-migration-tool/" class="md-nav__link">
     <span>
       
       TIBCO BusinessWorks Migration Tool
@@ -5340,7 +5841,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../tools/migration-tools/logic-apps-migration-tool/" class="md-nav__link">
+  <a href="../../../../developer-guides/tools/migration-tools/logic-apps-migration-tool/" class="md-nav__link">
     <span>
       
       Azure Logic Apps Migration Tool
@@ -5513,7 +6014,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../tools/integration-tools/health-tool/" class="md-nav__link">
+  <a href="../../../../developer-guides/tools/integration-tools/health-tool/" class="md-nav__link">
     <span>
       
       Health Tool
@@ -5555,7 +6056,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../tools/integration-tools/edi-tool/" class="md-nav__link">
+  <a href="../../../../developer-guides/tools/integration-tools/edi-tool/" class="md-nav__link">
     <span>
       
       EDI Tool
@@ -5726,7 +6227,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../tools/other-tools/scan-tool/" class="md-nav__link">
+  <a href="../../../../developer-guides/tools/other-tools/scan-tool/" class="md-nav__link">
     <span>
       
       Scan Tool
@@ -5976,7 +6477,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../deploy/overview/" class="md-nav__link">
+  <a href="../../../../deploy/overview/" class="md-nav__link">
     <span>
       
       Overview
@@ -6018,7 +6519,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../deploy/deploy-to-devant/" class="md-nav__link">
+  <a href="../../../../deploy/deploy-to-devant/" class="md-nav__link">
     <span>
       
       Deploy to Devant
@@ -6179,7 +6680,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../deploy/containerized-deployment/overview/" class="md-nav__link">
+  <a href="../../../../deploy/containerized-deployment/overview/" class="md-nav__link">
     <span>
       
       Overview
@@ -6221,7 +6722,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../deploy/containerized-deployment/deploy-as-docker-image/" class="md-nav__link">
+  <a href="../../../../deploy/containerized-deployment/deploy-as-docker-image/" class="md-nav__link">
     <span>
       
       Deploy as Docker Image
@@ -6263,7 +6764,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../deploy/containerized-deployment/deploy-on-kubernetes/" class="md-nav__link">
+  <a href="../../../../deploy/containerized-deployment/deploy-on-kubernetes/" class="md-nav__link">
     <span>
       
       Deploy on Kubernetes
@@ -6442,7 +6943,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../deploy/vm-based-deployment/overview/" class="md-nav__link">
+  <a href="../../../../deploy/vm-based-deployment/overview/" class="md-nav__link">
     <span>
       
       Overview
@@ -6484,7 +6985,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../deploy/vm-based-deployment/deploy-on-vm-as-executable-jar/" class="md-nav__link">
+  <a href="../../../../deploy/vm-based-deployment/deploy-on-vm-as-executable-jar/" class="md-nav__link">
     <span>
       
       Deploy on VM as Executable JAR
@@ -6526,7 +7027,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../deploy/vm-based-deployment/centralized-deployment/" class="md-nav__link">
+  <a href="../../../../deploy/vm-based-deployment/centralized-deployment/" class="md-nav__link">
     <span>
       
       Centralized Deployment
@@ -6568,7 +7069,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../deploy/vm-based-deployment/de-centralized-deployment/" class="md-nav__link">
+  <a href="../../../../deploy/vm-based-deployment/de-centralized-deployment/" class="md-nav__link">
     <span>
       
       Decentralized Deployment
@@ -6610,7 +7111,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../deploy/vm-based-deployment/github-action-for-cicd/" class="md-nav__link">
+  <a href="../../../../deploy/vm-based-deployment/github-action-for-cicd/" class="md-nav__link">
     <span>
       
       GitHub Action for CICD
@@ -6666,7 +7167,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../deploy/managing-configurations/" class="md-nav__link">
+  <a href="../../../../deploy/managing-configurations/" class="md-nav__link">
     <span>
       
       Managing configurations
@@ -6825,7 +7326,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../deploy/capacity-planning/overview/" class="md-nav__link">
+  <a href="../../../../deploy/capacity-planning/overview/" class="md-nav__link">
     <span>
       
       Overview
@@ -6867,7 +7368,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../deploy/capacity-planning/performance-report-for-rest-services/" class="md-nav__link">
+  <a href="../../../../deploy/capacity-planning/performance-report-for-rest-services/" class="md-nav__link">
     <span>
       
       Performance Report for REST Services
@@ -7046,7 +7547,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../deploy/deployment-best-practices/overview/" class="md-nav__link">
+  <a href="../../../../deploy/deployment-best-practices/overview/" class="md-nav__link">
     <span>
       
       Overview
@@ -7088,7 +7589,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../deploy/deployment-best-practices/runtime-security/" class="md-nav__link">
+  <a href="../../../../deploy/deployment-best-practices/runtime-security/" class="md-nav__link">
     <span>
       
       Runtime Security
@@ -7130,7 +7631,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../deploy/deployment-best-practices/os-level-security/" class="md-nav__link">
+  <a href="../../../../deploy/deployment-best-practices/os-level-security/" class="md-nav__link">
     <span>
       
       OS Level Security
@@ -7172,7 +7673,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../deploy/deployment-best-practices/network-level-security/" class="md-nav__link">
+  <a href="../../../../deploy/deployment-best-practices/network-level-security/" class="md-nav__link">
     <span>
       
       Network Level Security
@@ -7214,7 +7715,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../deploy/deployment-best-practices/configuration-best-practices/" class="md-nav__link">
+  <a href="../../../../deploy/deployment-best-practices/configuration-best-practices/" class="md-nav__link">
     <span>
       
       Configuration Best Practices
@@ -7444,7 +7945,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../observability-and-monitoring/overview/" class="md-nav__link">
+  <a href="../../../../observability-and-monitoring/overview/" class="md-nav__link">
     <span>
       
       Overview
@@ -7486,7 +7987,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../observability-and-monitoring/monitoring-with-wso2-integrator-icp/" class="md-nav__link">
+  <a href="../../../../observability-and-monitoring/monitoring-with-wso2-integrator-icp/" class="md-nav__link">
     <span>
       
       Monitoring with WSO2 Integrator: ICP
@@ -7528,7 +8029,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../observability-and-monitoring/observability-with-devant/" class="md-nav__link">
+  <a href="../../../../observability-and-monitoring/observability-with-devant/" class="md-nav__link">
     <span>
       
       Observability with Devant
@@ -7701,7 +8202,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../observability-and-monitoring/supported-observability-tools-and-platforms/overview/" class="md-nav__link">
+  <a href="../../../../observability-and-monitoring/supported-observability-tools-and-platforms/overview/" class="md-nav__link">
     <span>
       
       Overview
@@ -7743,7 +8244,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../observability-and-monitoring/supported-observability-tools-and-platforms/prometheus/" class="md-nav__link">
+  <a href="../../../../observability-and-monitoring/supported-observability-tools-and-platforms/prometheus/" class="md-nav__link">
     <span>
       
       Prometheus
@@ -7785,7 +8286,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../observability-and-monitoring/supported-observability-tools-and-platforms/jaeger/" class="md-nav__link">
+  <a href="../../../../observability-and-monitoring/supported-observability-tools-and-platforms/jaeger/" class="md-nav__link">
     <span>
       
       Jaeger
@@ -7827,7 +8328,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../observability-and-monitoring/supported-observability-tools-and-platforms/zipkin/" class="md-nav__link">
+  <a href="../../../../observability-and-monitoring/supported-observability-tools-and-platforms/zipkin/" class="md-nav__link">
     <span>
       
       Zipkin
@@ -7869,7 +8370,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../observability-and-monitoring/supported-observability-tools-and-platforms/new-relic/" class="md-nav__link">
+  <a href="../../../../observability-and-monitoring/supported-observability-tools-and-platforms/new-relic/" class="md-nav__link">
     <span>
       
       New Relic
@@ -7911,7 +8412,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../observability-and-monitoring/supported-observability-tools-and-platforms/datadog/" class="md-nav__link">
+  <a href="../../../../observability-and-monitoring/supported-observability-tools-and-platforms/datadog/" class="md-nav__link">
     <span>
       
       Datadog
@@ -7953,7 +8454,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../observability-and-monitoring/supported-observability-tools-and-platforms/elastic-stack/" class="md-nav__link">
+  <a href="../../../../observability-and-monitoring/supported-observability-tools-and-platforms/elastic-stack/" class="md-nav__link">
     <span>
       
       Elastic Stack
@@ -7995,7 +8496,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../observability-and-monitoring/supported-observability-tools-and-platforms/opensearch/" class="md-nav__link">
+  <a href="../../../../observability-and-monitoring/supported-observability-tools-and-platforms/opensearch/" class="md-nav__link">
     <span>
       
       OpenSearch
@@ -8037,7 +8538,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../observability-and-monitoring/supported-observability-tools-and-platforms/moesif/" class="md-nav__link">
+  <a href="../../../../observability-and-monitoring/supported-observability-tools-and-platforms/moesif/" class="md-nav__link">
     <span>
       
       Moesif
@@ -8267,7 +8768,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../references/enterprise-integrations-patterns/" class="md-nav__link">
+  <a href="../../../../references/enterprise-integrations-patterns/" class="md-nav__link">
     <span>
       
       Enterprise Integrations Patterns
@@ -8309,7 +8810,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../references/system-requirements/" class="md-nav__link">
+  <a href="../../../../references/system-requirements/" class="md-nav__link">
     <span>
       
       System Requirements
@@ -8351,7 +8852,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../references/ai-usage-and-data-handling-guidelines/" class="md-nav__link">
+  <a href="../../../../references/ai-usage-and-data-handling-guidelines/" class="md-nav__link">
     <span>
       
       AI Usage & Data Handling Guidelines
@@ -8393,7 +8894,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../references/connector-development-guidelines/" class="md-nav__link">
+  <a href="../../../../references/connector-development-guidelines/" class="md-nav__link">
     <span>
       
       Connector Development Guidelines
@@ -8603,7 +9104,7 @@
 <!-- Main navigation item with nested items -->
 
 <li class="md-nav__item ">
-  <a href="../../wso2-integrator-bi-release-notes/" class="md-nav__link">
+  <a href="../../../../wso2-integrator-bi-release-notes/" class="md-nav__link">
     <span>
       
       Release Note
@@ -8656,79 +9157,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-create-a-new-integration-project" class="md-nav__link">
-    Step 1: Create a new integration project
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-create-an-http-service" class="md-nav__link">
-    Step 2: Create an HTTP service
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-add-the-resource-method" class="md-nav__link">
-    Step 3: Add the resource method
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-5-add-a-reusable-data-mapper" class="md-nav__link">
-    Step 5: Add a reusable data mapper
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-6-optional-add-an-inline-data-mapper" class="md-nav__link">
-    Step 6 (Optional): Add an inline data mapper
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-7-create-mappings" class="md-nav__link">
-    Step 7: Create mappings
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 7: Create mappings">
+    <nav class="md-nav" aria-label="Overview">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#create-simple-mapping" class="md-nav__link">
-    Create simple mapping
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#auto-mapping" class="md-nav__link">
-    Auto mapping
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#many-to-one-mapping" class="md-nav__link">
-    Many-to-one mapping
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#edit-mapping-expression" class="md-nav__link">
-    Edit mapping expression
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#array-mapping" class="md-nav__link">
-    Array mapping
+  <a href="#why-this-use-case" class="md-nav__link">
+    Why this use case
   </a>
   
 </li>
@@ -8739,16 +9177,361 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-8-return-the-transformed-payload" class="md-nav__link">
-    Step 8: Return the transformed payload
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-9-run-the-integration" class="md-nav__link">
-    Step 9: Run the integration
+  <a href="#step-1-create-a-new-integration-project" class="md-nav__link">
+    Step 1: Create a new integration project
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-create-the-tcp-service" class="md-nav__link">
+    Step 2: Create the TCP service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-rename-the-service-and-add-a-class-variable" class="md-nav__link">
+    Step 3: Rename the service and add a class variable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-implement-the-onconnect-logic" class="md-nav__link">
+    Step 4: Implement the onConnect logic
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 4: Implement the onConnect logic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#declare-the-welcome-prompt-variable" class="md-nav__link">
+    Declare the welcome prompt variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-the-prompt-to-the-caller" class="md-nav__link">
+    Send the prompt to the caller
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-the-return-statement" class="md-nav__link">
+    Update the return statement
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-convert-incoming-bytes-to-string" class="md-nav__link">
+    Step 5: Convert incoming bytes to string
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 5: Convert incoming bytes to string">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-a-function-call-node" class="md-nav__link">
+    Add a function call node
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select-the-conversion-function" class="md-nav__link">
+    Select the conversion function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-function-parameters" class="md-nav__link">
+    Configure the function parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-declare-a-variable-for-the-message" class="md-nav__link">
+    Step 6: Declare a variable for the message
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 6: Declare a variable for the message">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-a-variable-node" class="md-nav__link">
+    Add a variable node
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-variable-details" class="md-nav__link">
+    Configure the variable details
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-handle-new-user-registration" class="md-nav__link">
+    Step 7: Handle new user registration
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 7: Handle new user registration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-a-conditional-check" class="md-nav__link">
+    Add a conditional check
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-the-update-logic" class="md-nav__link">
+    Add the update logic
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-assign-the-username" class="md-nav__link">
+    Step 8: Assign the username
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 8: Assign the username">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-the-update-logic_1" class="md-nav__link">
+    Add the update logic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-variable-update" class="md-nav__link">
+    Configure the variable update
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-log-the-new-client-connection" class="md-nav__link">
+    Step 9: Log the new client connection
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 9: Log the new client connection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-the-log-node" class="md-nav__link">
+    Add the log node
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-log-expression" class="md-nav__link">
+    Configure the log expression
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-log-the-welcome-message" class="md-nav__link">
+    Step 10: Log the welcome message
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 10: Log the welcome message">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-the-log-node_1" class="md-nav__link">
+    Add the log node
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-log-expression_1" class="md-nav__link">
+    Configure the log expression
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-11-prompt-the-user-for-input" class="md-nav__link">
+    Step 11: Prompt the user for input
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 11: Prompt the user for input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-the-write-action" class="md-nav__link">
+    Add the write action
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-prompt-message" class="md-nav__link">
+    Configure the prompt message
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-12-terminate-the-execution-flow" class="md-nav__link">
+    Step 12: Terminate the execution flow
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 12: Terminate the execution flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-the-return-statement" class="md-nav__link">
+    Add the return statement
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-13-log-the-chat-message" class="md-nav__link">
+    Step 13: Log the chat message
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 13: Log the chat message">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-the-log-node_2" class="md-nav__link">
+    Add the log node
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-log-message" class="md-nav__link">
+    Configure the log message
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-14-send-an-acknowledgment-to-the-client" class="md-nav__link">
+    Step 14: Send an acknowledgment to the client
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 14: Send an acknowledgment to the client">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-the-write-action_1" class="md-nav__link">
+    Add the write action
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-acknowledgment-message" class="md-nav__link">
+    Configure the acknowledgment message
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-15-run-and-test-the-application" class="md-nav__link">
+    Step 15: Run and test the application
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 15: Run and test the application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-the-application" class="md-nav__link">
+    Run the application
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-the-chat-flow" class="md-nav__link">
+    Test the chat flow
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -8768,7 +9551,7 @@
                   
 
   
-    <a href="https://github.com/wso2/docs-bi/edit/main/en/docs/developer-guides/data-mapping.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/wso2/docs-bi/edit/main/en/docs/integration-guides/usecases/tcp-chat-service/build-a-tcp-chat-service.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -8777,259 +9560,366 @@
     
       
     
-    <a href="https://github.com/wso2/docs-bi/raw/main/en/docs/developer-guides/data-mapping.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/wso2/docs-bi/raw/main/en/docs/integration-guides/usecases/tcp-chat-service/build-a-tcp-chat-service.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="data-mapping">Data Mapping<a class="headerlink" href="#data-mapping" title="Permanent link">&para;</a></h1>
-<p>This guide shows how to build an integration that transforms a JSON payload into a different JSON structure using WSO2 Integrator: BI Data Mapper. You will create an HTTP service with a single resource (<code>transform</code>) to receive a JSON payload and return the transformed result.</p>
+<h1 id="build-a-tcp-chat-service">Build a TCP chat service<a class="headerlink" href="#build-a-tcp-chat-service" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>This is a low-code walkthrough that uses the Ballerina Integrator TCP service and messaging capabilities to build an end-to-end real-time communication pipeline — without writing code by hand. You will:</p>
+<ol>
+<li>Create a TCP listener service that listens for incoming client connections on port <code>3000</code>.</li>
+<li>Register client usernames and maintain active client connections.</li>
+<li>Send and receive messages between the chat service and connected clients.</li>
+<li>Handle client disconnections and manage the client connection lifecycle.</li>
+</ol>
+<p><a href="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/chat-service.png">
+   <img
+   src="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/chat-service.png"
+      alt="Create integration"
+      width="80%"
+   />
+</a></p>
+<h3 id="why-this-use-case">Why this use case<a class="headerlink" href="#why-this-use-case" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Demonstrates real-time bidirectional communication using TCP sockets.</li>
+<li>Shows how to manage multiple concurrent client connections and sessions.</li>
+<li>Illustrates data transformation between byte arrays and strings in network communication.</li>
+<li>Scales easily from a single client to multiple concurrent users.</li>
+</ul>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<p>Before you begin, make sure you have the following:</p>
+<ul>
+<li><b>Visual Studio Code</b>: Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> if you don't have it already.</li>
+<li><b>WSO2 Integrator: BI Extension</b>: Install the WSO2 Integrator: BI extension. For detailed steps, see <a href="../install-wso2-integrator-bi/">Install WSO2 Integrator: BI</a>.</li>
+<li><b>TCP Client Tools</b>: Netcat (<code>nc</code>) or Telnet for testing the chat service.</li>
+</ul>
 <h2 id="step-1-create-a-new-integration-project">Step 1: Create a new integration project<a class="headerlink" href="#step-1-create-a-new-integration-project" title="Permanent link">&para;</a></h2>
+<p>WSO2 Integrator: BI extension provides a low-code graphical environment to visually design and deploy integrations using Ballerina.</p>
 <ol>
-<li>Click on the <strong>WSO2 Integrator: BI</strong> icon on the sidebar.</li>
-<li>Click on the <strong>Create New Integration</strong> button.</li>
-<li>Enter the integration name as <code>datamapper</code>.</li>
-<li>Select integration directory location by clicking on the <strong>Select Path</strong> button.</li>
 <li>
-<p>Click on the <strong>Create Integration</strong> button to create the integration project.  </p>
-<p><a href="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/create-integration.png">
-<img src="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/create-integration.png" alt="Create Integration" width="70%"></a></p>
+<p>Launch VS Code and click the WSO2 Integrator: BI icon on the left sidebar.
+      You'll be taken to the welcome page that introduces the integration workspace.</p>
+</li>
+<li>
+<p>Below the <strong>Get Started Quickly</strong> section, you'll see three separate options:</p>
+<ul>
+<li>Create New Integration – start a new integration project from scratch using the graphical designer.</li>
+<li>Import External Integration – bring in existing integrations from other platforms.</li>
+<li>Explore Pre-Built Samples – open existing templates or tutorials.</li>
+</ul>
+</li>
+<li>
+<p>Click <strong>Create New Integration</strong>.
+      This opens the integration creation wizard, where you can:</p>
+<ul>
+<li>Enter <code>TCP chat service</code> in <strong>Integration Name</strong> and choose a folder in <strong>Select Path</strong>.</li>
+</ul>
+</li>
+<li>
+<p>Once the project is created, you'll enter the graphical integration designer view.
+      From here, you can start adding listeners, data mappings, and logic components to build your flow visually.</p>
 </li>
 </ol>
-<h2 id="step-2-create-an-http-service">Step 2: Create an HTTP service<a class="headerlink" href="#step-2-create-an-http-service" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>This is the entry point for all low-code projects in WSO2 Integrator: BI.</p>
+</blockquote>
+<p><a href="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/create-integration.gif">
+   <img
+   src="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/create-integration.gif"
+      alt="Create integration"
+      width="80%"
+   />
+</a></p>
+<h2 id="step-2-create-the-tcp-service">Step 2: Create the TCP service<a class="headerlink" href="#step-2-create-the-tcp-service" title="Permanent link">&para;</a></h2>
+<p>In this step, you will add a TCP Service to your integration to handle TCP client connections on a specific port.</p>
 <ol>
-<li>In the design view, click on the <strong>Add Artifact</strong> button.</li>
-<li>Select <strong>HTTP Service</strong> under the <strong>Integration as API</strong> category.</li>
-<li>
-<p>Click on the <strong>Create</strong> button to create the new service with the default configurations.</p>
-<p><a href="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/create-service.png">
-<img src="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/create-service.png" alt="Create Service" width="70%"></a></p>
-</li>
+<li>In the <strong>Design</strong> view, click <strong>+ Add Artifact</strong>.</li>
+<li>Under the <strong>Integration as API</strong> section, select <strong>TCP Service</strong>.</li>
+<li>In the <strong>Create TCP Service</strong> form, enter <code>3000</code> in the <strong>TCP Port</strong> field.</li>
+<li>Click <strong>Create</strong>.</li>
 </ol>
-<h2 id="step-3-add-the-resource-method">Step 3: Add the resource method<a class="headerlink" href="#step-3-add-the-resource-method" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>The <strong>Service Designer</strong> will now load, displaying the TCP Service with the default <code>onConnect</code> event handler.</p>
+</blockquote>
+<p><a href="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/create-tcp-service.gif">
+   <img
+      src="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/create-tcp-service.gif"
+      alt="Create TCP Service"
+      width="80%"
+   />
+</a></p>
+<h2 id="step-3-rename-the-service-and-add-a-class-variable">Step 3: Rename the service and add a class variable<a class="headerlink" href="#step-3-rename-the-service-and-add-a-class-variable" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Click <strong>Add Resource</strong> and select <strong>POST</strong> method.</li>
-<li>Set the resource path as <code>transform</code>.</li>
-<li>
-<p>Configure the request payload by pasting the JSON sample below. Set the type name as <code>Input</code> and the variable name to <code>input</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;firstName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;lastName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Doe&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;john.doe@example.com&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;street&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;123 Elm St&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;city&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;San Francisco&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CA&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;postalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">94107</span>
-<span class="w">        </span><span class="p">},</span>
-<span class="w">        </span><span class="nt">&quot;phoneNumbers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;123-456-7890&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;098-765-4321&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;account&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A123456789&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;balance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2500</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;lastTransaction&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-10-15T14:30:00Z&quot;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
-
-<p><a href="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/create-new-type.gif">
-<img src="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/create-new-type.gif" alt="Create New Type" width="70%"></a></p>
+<li>In the <strong>Types</strong> section, right-click the existing service type (shown as <code>TcpEchoService</code>), and then select <strong>Edit</strong> to open the <strong>Service Class Designer</strong>.</li>
+<li>Select the <strong>Edit</strong> (pencil) icon next to the <strong>Class Name</strong> box.</li>
+<li>Replace <code>TcpEchoService</code> with <code>ChatService</code>, and then select <strong>Save</strong>.</li>
+<li>In the <strong>Class Variables</strong> section, select <strong>Add Variable</strong> (<strong>+</strong>).</li>
+<li>In the <strong>Add Variable</strong> dialog box, configure the following settings:<ul>
+<li><strong>Variable Name</strong>: Enter <code>username</code>.</li>
+<li><strong>Variable Type</strong>: Select <strong>string</strong>.</li>
+<li><strong>Default Value</strong>: Enter <code>""</code> to initialize the variable as an empty string.</li>
+</ul>
 </li>
-<li>
-<p>Change the response body schema of the <code>201</code> response to <code>Output</code>.</p>
-</li>
-<li>To create the type named <code>Output</code>, click <strong>Create New Type</strong> within the <strong>Message Body Type</strong> editor.</li>
-<li>
-<p>Switch to <strong>Import</strong> mode and provide the following JSON to create the BI type named <code>Output</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;fullName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;contactDetails&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;john.doe@example.com&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;primaryPhone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;123-456-7890&quot;</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;location&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;city&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;San Francisco&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CA&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;zipCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;94107&quot;</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;accountInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A123456789&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;balance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2500</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;transactionDate&quot;</span><span class="p">:</span><span class="w">  </span><span class="s2">&quot;2023-10-15T14:30:00Z&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
-
-<p><a href="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/type-from-json.gif">
-<img src="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/type-from-json.gif" alt="Create Type From JSON" width="70%"></a></p>
-</li>
-<li>
-<p>Click <strong>Save</strong> to apply the response configuration.</p>
-</li>
-<li>Finally, click <strong>Save</strong> to update the resource with the specified configurations. </li>
+<li>Select <strong>Save</strong> to add the variable to the list.</li>
 </ol>
-<div class="admonition info">
-<p class="admonition-title">Resource Method</p>
-<p>To learn more about resources, see <a href="https://ballerina.io/learn/by-example/resource-methods/">Ballerina Resources</a>.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Reusable vs inline data mappers</p>
-<p>There are two ways to create data mappers in WSO2 Integrator: BI. You can create reusable data mappers that can be used anywhere within the integration project, or inline data mappers that are specific to a particular resource or function. In this guide, Step 5 demonstrates how to create a reusable data mapper, and Step 6 (optional) demonstrates how to create an inline data mapper.</p>
-</div>
-<h2 id="step-5-add-a-reusable-data-mapper">Step 5: Add a reusable data mapper<a class="headerlink" href="#step-5-add-a-reusable-data-mapper" title="Permanent link">&para;</a></h2>
+<p><a href="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/define-chat-message-type.gif">
+   <img
+      src="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/define-chat-message-type.gif"
+      alt="Create types for chat messages"
+      width="80%"
+   />
+</a></p>
+<h2 id="step-4-implement-the-onconnect-logic">Step 4: Implement the onConnect logic<a class="headerlink" href="#step-4-implement-the-onconnect-logic" title="Permanent link">&para;</a></h2>
+<h3 id="declare-the-welcome-prompt-variable">Declare the welcome prompt variable<a class="headerlink" href="#declare-the-welcome-prompt-variable" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Click on the <code>transform</code> resource to navigate to the resource implementation designer view.</li>
-<li>Hover over the arrow after start and click the ➕ button to add a new action to the resource.</li>
-<li>Select <strong>Map Data</strong> from the node panel and click the <strong>Create Data Mapper</strong> button. </li>
-<li>
-<p>Fill in the required fields with the values below and click the <code>Create</code> button to create the data mapper.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Data Mapper Name</td>
-<td><code>transformed</code></td>
-</tr>
-<tr>
-<td>Inputs</td>
-<td><code>Input input</code></td>
-</tr>
-<tr>
-<td>Output</td>
-<td><code>Output</code></td>
-</tr>
-</tbody>
-</table>
-<p><a href="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/add-data-mapper.png"><img src="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/add-data-mapper.png" alt="Add Data Mapper" width="70%"></a></p>
+<li>In the <strong>Service Class Designer</strong>, locate the <strong>Methods</strong> section, and then select the <strong>Edit</strong> (pencil) icon next to <strong>onConnect</strong>.</li>
+<li>On the flow diagram, hover over the connection line and select <strong>Add</strong> (<strong>+</strong>) to insert a new node.</li>
+<li>From the palette, select <strong>Declare Variable</strong>.</li>
+<li>In the <strong>Declare Variable</strong> properties, configure the following settings:<ul>
+<li><strong>Name</strong>: Enter <code>welcomePrompt</code>.</li>
+<li><strong>Type</strong>: Select <strong>string</strong>.</li>
+<li><strong>Expression</strong>: Enter <code>"Enter your username: "</code> (include the double quotes).</li>
+</ul>
 </li>
-<li>
-<p>Your newly created data mapper appears under <strong>Current Integration</strong>. Click it to add it to the sequence.</p>
-</li>
-<li>Set <code>payload</code> as the <strong>Input</strong> and <code>outputResult</code> as the <strong>Result</strong>, then save.</li>
-<li>
-<p>Click the kebab menu on the <strong>Map Data</strong> node and choose <strong>View</strong> to open the visual data mapper.</p>
-<p><a href="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/data-mapper-added.png"><img src="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/data-mapper-added.png" alt="Data Mapper Added" width="70%"></a></p>
-</li>
+<li>Select <strong>Save</strong>.</li>
 </ol>
-<h2 id="step-6-optional-add-an-inline-data-mapper">Step 6 (Optional): Add an inline data mapper<a class="headerlink" href="#step-6-optional-add-an-inline-data-mapper" title="Permanent link">&para;</a></h2>
+<h3 id="send-the-prompt-to-the-caller">Send the prompt to the caller<a class="headerlink" href="#send-the-prompt-to-the-caller" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Click on the <code>transform</code> resource to navigate to the resource implementation designer view.</li>
-<li>Hover over the arrow after start and click the ➕ button to add a new action to the resource.</li>
-<li>Select <strong>Declare Variable</strong> from the node panel.</li>
-<li>Provide <code>output</code> as the Name and select <code>Output</code> as the Type.</li>
-<li>
-<p>Once you select the type, the <strong>Open in Data Mapper</strong> button appears. Click it to open the visual data mapper.</p>
-<p><a href="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/add-inline-data-mapper.png"><img src="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/add-inline-data-mapper.png" alt="Add Inline Data Mapper" width="70%"></a></p>
-<p><a href="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/inline-data-mapper-added.png"><img src="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/inline-data-mapper-added.png" alt="Inline Data Mapper Added" width="70%"></a></p>
-</li>
+<li>Select <strong>Add</strong> (<strong>+</strong>) on the flow line immediately after the <code>welcomePrompt</code> variable.</li>
+<li>In the <strong>Connections</strong> section of the palette, select <strong>caller</strong>.</li>
+<li>Select <strong>writeBytes</strong> from the list of operations.</li>
+<li>In the <strong>Data</strong> field, enter <code>welcomePrompt.toBytes()</code>.</li>
+<li>Select <strong>Save</strong>.</li>
 </ol>
-<h2 id="step-7-create-mappings">Step 7: Create mappings<a class="headerlink" href="#step-7-create-mappings" title="Permanent link">&para;</a></h2>
-<p>Click a source field, then click the desired target field to create a mapping.</p>
-<h3 id="create-simple-mapping">Create simple mapping<a class="headerlink" href="#create-simple-mapping" title="Permanent link">&para;</a></h3>
-<p><a href="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/simple-mapping.gif"><img src="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/simple-mapping.gif" alt="Simple Mapping" width="70%"></a></p>
-<h3 id="auto-mapping">Auto mapping<a class="headerlink" href="#auto-mapping" title="Permanent link">&para;</a></h3>
-<p>Click the <strong>Auto Map</strong> button to automatically create mappings. The BI Copilot panel opens to assist you.</p>
-<p><a href="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/auto-mapping.gif"><img src="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/auto-mapping.gif" alt="Auto Mapping" width="70%"></a></p>
-<h3 id="many-to-one-mapping">Many-to-one mapping<a class="headerlink" href="#many-to-one-mapping" title="Permanent link">&para;</a></h3>
-<p>You can map multiple source fields to a single target field. For example, create the <code>fullName</code> field in the output by combining the <code>firstName</code> and <code>lastName</code> fields from the input.</p>
-<p><a href="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/many-to-one-mapping.gif"><img src="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/many-to-one-mapping.gif" alt="Many to One Mapping" width="70%"></a></p>
-<h3 id="edit-mapping-expression">Edit mapping expression<a class="headerlink" href="#edit-mapping-expression" title="Permanent link">&para;</a></h3>
-<p>Click the <code>&lt;&gt;</code> button on any link, or use the context menu on any output field, to edit the mapping expression.</p>
-<p><a href="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/edit-mapping.gif"><img src="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/edit-mapping.gif" alt="Edit Mapping Expression" width="70%"></a></p>
-<h3 id="array-mapping">Array mapping<a class="headerlink" href="#array-mapping" title="Permanent link">&para;</a></h3>
-<p>BI Data Mapper offers several ways to map arrays. You can map entire arrays, specific elements, or use functions to manipulate array data.
-To map the first phone number from the <code>phoneNumbers</code> array in the input to the <code>primaryPhone</code> field in the output, create a mapping from <code>phoneNumbers</code> to <code>primaryPhone</code> and pick "Extract Single Element From Array" to get the first element. </p>
-<p><a href="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/array-mapping.gif"><img src="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/array-mapping.gif" alt="Array Mapping" width="70%"></a></p>
-<h2 id="step-8-return-the-transformed-payload">Step 8: Return the transformed payload<a class="headerlink" href="#step-8-return-the-transformed-payload" title="Permanent link">&para;</a></h2>
+<h3 id="update-the-return-statement">Update the return statement<a class="headerlink" href="#update-the-return-statement" title="Permanent link">&para;</a></h3>
 <ol>
-<li>After you complete the mappings, click the <strong>Go Back</strong> button to return to the resource designer view.</li>
-<li>Hover over the arrow after the <strong>Map Data</strong> node in the flow diagram and click the ➕ button.</li>
-<li>
-<p>Select <strong>Return</strong> from the node panel. </p>
-<p><a href="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/add-return.png"><img src="https://wso2.github.io/docs-bi/assets/img/developer-guides/data-mapping/add-return.png" alt="Add Return" width="70%"></a></p>
-</li>
-<li>
-<p>Provide <code>outputResult</code> as the return expression.</p>
-</li>
-<li>
-<p>The final code looks like this. The source view can be accessed by clicking the <code>&lt;/&gt;</code> button in the top right corner. </p>
-<div class="highlight"><pre><span></span><code>import ballerina/http;
-
-listener http:Listener httpDefaultListener = http:getDefaultListener();
-
-service / on httpDefaultListener {
-    resource function post transform(@http:Payload Input payload) returns error|json|http:InternalServerError {
-        do {
-            Output outputResult = transform(payload);
-            return outputResult;
-        } on fail error err {
-            // handle error
-            return error(&quot;unhandled error&quot;, err);
-        }
-    }
-}
-</code></pre></div>
-
-</li>
+<li>Select the <strong>Return</strong> node at the end of the flow.</li>
+<li>In the <strong>Expression</strong> field, replace the existing value with <code>new ChatService()</code>.</li>
+<li>Select <strong>Save</strong> to complete the function.</li>
 </ol>
-<h2 id="step-9-run-the-integration">Step 9: Run the integration<a class="headerlink" href="#step-9-run-the-integration" title="Permanent link">&para;</a></h2>
+<p><a href="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/create-tcp-listener.gif">
+   <img
+      src="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/create-tcp-listener.gif"
+      alt="Create TCP service listener"
+      width="80%"
+   />
+</a></p>
+<h2 id="step-5-convert-incoming-bytes-to-string">Step 5: Convert incoming bytes to string<a class="headerlink" href="#step-5-convert-incoming-bytes-to-string" title="Permanent link">&para;</a></h2>
+<h3 id="add-a-function-call-node">Add a function call node<a class="headerlink" href="#add-a-function-call-node" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Click the <strong>Run</strong> button in the top-right corner to run the integration.</li>
-<li>Confirm the <strong>Test with Try it Client</strong> prompt. The integration starts running and serving at <a href="http://localhost:9090/transform">http://localhost:9090/transform</a>.</li>
-<li>
-<p>Verify the integration by sending a POST request to the <code>/transform</code> endpoint with the following JSON payload.</p>
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;http://localhost:9090/transform&quot;</span><span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
-<span class="s1">    &quot;user&quot;: {</span>
-<span class="s1">        &quot;firstName&quot;: &quot;John&quot;,</span>
-<span class="s1">        &quot;lastName&quot;: &quot;Doe&quot;,</span>
-<span class="s1">        &quot;email&quot;: &quot;john.doe@example.com&quot;,</span>
-<span class="s1">        &quot;address&quot;: {</span>
-<span class="s1">            &quot;street&quot;: &quot;123 Elm St&quot;,</span>
-<span class="s1">            &quot;city&quot;: &quot;San Francisco&quot;,</span>
-<span class="s1">            &quot;state&quot;: &quot;CA&quot;,</span>
-<span class="s1">            &quot;postalCode&quot;: 94107</span>
-<span class="s1">        },</span>
-<span class="s1">        &quot;phoneNumbers&quot;: [&quot;123-456-7890&quot;, &quot;098-765-4321&quot;]</span>
-<span class="s1">    },</span>
-<span class="s1">    &quot;account&quot;: {</span>
-<span class="s1">        &quot;accountNumber&quot;: &quot;A123456789&quot;,</span>
-<span class="s1">        &quot;balance&quot;: 2500,</span>
-<span class="s1">        &quot;lastTransaction&quot;: &quot;2023-10-15T14:30:00Z&quot;</span>
-<span class="s1">    } </span>
-<span class="s1">}&#39;</span>
-</code></pre></div>
-
-</li>
-<li>
-<p>The response will be the transformed JSON payload.<br />
-    <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;fullName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;contactDetails&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;john.doe@example.com&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;primaryPhone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;123-456-7890&quot;</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;location&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;city&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;San Francisco&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CA&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;zipCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;94107&quot;</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;accountInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A123456789&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;balance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2500</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;transactionDate&quot;</span><span class="p">:</span><span class="w">  </span><span class="s2">&quot;2023-10-15T14:30:00Z&quot;</span>
-<span class="p">}</span>
-</code></pre></div></p>
-</li>
+<li>Click <strong>Call Function</strong> in the right-side palette.</li>
 </ol>
+<h3 id="select-the-conversion-function">Select the conversion function<a class="headerlink" href="#select-the-conversion-function" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Search for "string" in the function library panel.</li>
+<li>Select <strong>fromBytes</strong> from the list.</li>
+</ol>
+<h3 id="configure-the-function-parameters">Configure the function parameters<a class="headerlink" href="#configure-the-function-parameters" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Enter <code>data</code> in the <strong>bytes</strong> field.</li>
+<li>Enter <code>messageResult</code> in the <strong>Result</strong> field.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p><a href="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/convert-bytes-to-string.gif">
+   <img
+      src="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/convert-bytes-to-string.gif"
+      alt="Convert bytes to string"
+      width="80%"
+   />
+</a></p>
+<h2 id="step-6-declare-a-variable-for-the-message">Step 6: Declare a variable for the message<a class="headerlink" href="#step-6-declare-a-variable-for-the-message" title="Permanent link">&para;</a></h2>
+<h3 id="add-a-variable-node">Add a variable node<a class="headerlink" href="#add-a-variable-node" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click <strong>Declare Variable</strong> in the right-side palette.</li>
+</ol>
+<h3 id="configure-the-variable-details">Configure the variable details<a class="headerlink" href="#configure-the-variable-details" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Enter <code>message</code> in the <strong>Name</strong> field.</li>
+<li>Select <code>string</code> as the <strong>Type</strong>.</li>
+<li>Enter <code>messageResult.trim()</code> in the <strong>Initial Value</strong> field.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p><a href="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/declare-message-variable.gif">
+   <img
+      src="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/declare-message-variable.gif"
+      alt="Declare message variable"
+      width="80%"
+   />
+</a></p>
+<h2 id="step-7-handle-new-user-registration">Step 7: Handle new user registration<a class="headerlink" href="#step-7-handle-new-user-registration" title="Permanent link">&para;</a></h2>
+<h3 id="add-a-conditional-check">Add a conditional check<a class="headerlink" href="#add-a-conditional-check" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click <strong>If</strong> in the right-side palette.</li>
+<li>Enter <code>self.username == ""</code> in the <strong>Condition</strong> field.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<h3 id="add-the-update-logic">Add the update logic<a class="headerlink" href="#add-the-update-logic" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Drag the <strong>Update Variable</strong> node inside the <strong>If</strong> block to set the username.</li>
+</ol>
+<p><a href="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/check-username-logic.gif">
+   <img
+      src="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/check-username-logic.gif"
+      alt="Check username logic"
+      width="80%"
+   />
+</a></p>
+<h2 id="step-8-assign-the-username">Step 8: Assign the username<a class="headerlink" href="#step-8-assign-the-username" title="Permanent link">&para;</a></h2>
+<h3 id="add-the-update-logic_1">Add the update logic<a class="headerlink" href="#add-the-update-logic_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click the <strong>+</strong> icon inside the <strong>If</strong> block.</li>
+<li>Select <strong>Update Variable</strong> from the list.</li>
+</ol>
+<h3 id="configure-the-variable-update">Configure the variable update<a class="headerlink" href="#configure-the-variable-update" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Enter <code>self.username</code> in the <strong>Variable</strong> field.</li>
+<li>Enter <code>message</code> in the <strong>Expression</strong> field.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p><a href="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/update-username-variable.gif">
+   <img
+      src="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/update-username-variable.gif"
+      alt="Update username variable"
+      width="80%"
+   />
+</a></p>
+<h2 id="step-9-log-the-new-client-connection">Step 9: Log the new client connection<a class="headerlink" href="#step-9-log-the-new-client-connection" title="Permanent link">&para;</a></h2>
+<h3 id="add-the-log-node">Add the log node<a class="headerlink" href="#add-the-log-node" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click the <strong>+</strong> icon inside the <strong>If</strong> block.</li>
+<li>Select <strong>Log Info</strong> from the list.</li>
+</ol>
+<h3 id="configure-the-log-expression">Configure the log expression<a class="headerlink" href="#configure-the-log-expression" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click <strong>Expression</strong> in the properties panel.</li>
+<li>Enter <code>string ${self.username} connected</code> in the field.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p><a href="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/log-new-client.gif">
+   <img
+      src="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/log-new-client.gif"
+      alt="Log new client connection"
+      width="80%"
+   />
+</a></p>
+<h2 id="step-10-log-the-welcome-message">Step 10: Log the welcome message<a class="headerlink" href="#step-10-log-the-welcome-message" title="Permanent link">&para;</a></h2>
+<h3 id="add-the-log-node_1">Add the log node<a class="headerlink" href="#add-the-log-node_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click the <strong>+</strong> icon inside the <strong>If</strong> block.</li>
+<li>Select <strong>Log Info</strong> from the list.</li>
+</ol>
+<h3 id="configure-the-log-expression_1">Configure the log expression<a class="headerlink" href="#configure-the-log-expression_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Select <strong>Expression</strong> in the properties panel.</li>
+<li>Enter the string <code>string Welcome ${self.username}.toBytes()</code> in the field.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p><a href="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/send-welcome-message.gif">
+   <img
+      src="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/send-welcome-message.gif"
+      alt="Log welcome message"
+      width="80%"
+   />
+</a></p>
+<h2 id="step-11-prompt-the-user-for-input">Step 11: Prompt the user for input<a class="headerlink" href="#step-11-prompt-the-user-for-input" title="Permanent link">&para;</a></h2>
+<h3 id="add-the-write-action">Add the write action<a class="headerlink" href="#add-the-write-action" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Select the <strong>+</strong> icon inside the <strong>If</strong> block.</li>
+<li>Select <strong>caller</strong> from the <strong>Connections</strong> menu.</li>
+<li>Select <strong>writeBytes</strong> from the list of actions.</li>
+</ol>
+<h3 id="configure-the-prompt-message">Configure the prompt message<a class="headerlink" href="#configure-the-prompt-message" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Enter the following expression in the <strong>data</strong> field: 
+   <code>string Welcome ${self.username}! Enter your message:.toBytes()</code>.</li>
+<li>Select <strong>Save</strong>.</li>
+</ol>
+<p><a href="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/prompt-user-input.gif">
+   <img
+      src="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/prompt-user-input.gif"
+      alt="Prompt user for input"
+      width="80%"
+   />
+</a></p>
+<h2 id="step-12-terminate-the-execution-flow">Step 12: Terminate the execution flow<a class="headerlink" href="#step-12-terminate-the-execution-flow" title="Permanent link">&para;</a></h2>
+<h3 id="add-the-return-statement">Add the return statement<a class="headerlink" href="#add-the-return-statement" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click the <strong>+</strong> icon in the flow.</li>
+<li>Select <strong>Return</strong> from the <strong>Control</strong>.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p><a href="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/add-return-node.gif">
+   <img
+      src="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/add-return-node.gif"
+      alt="Add return node"
+      width="80%"
+   />
+</a></p>
+<h2 id="step-13-log-the-chat-message">Step 13: Log the chat message<a class="headerlink" href="#step-13-log-the-chat-message" title="Permanent link">&para;</a></h2>
+<h3 id="add-the-log-node_2">Add the log node<a class="headerlink" href="#add-the-log-node_2" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Select <strong>Log Info</strong> from the <strong>Logging</strong> section in the right-side palette.</li>
+</ol>
+<h3 id="configure-the-log-message">Configure the log message<a class="headerlink" href="#configure-the-log-message" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Select <strong>Expression</strong> in the properties panel.</li>
+<li>Enter the string <code>string ${self.username}: ${message}</code> in the field.</li>
+<li>Select <strong>Save</strong>.</li>
+</ol>
+<p><a href="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/log-chat-message.gif">
+   <img
+      src="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/log-chat-message.gif"
+      alt="Log chat message"
+      width="80%"
+   />
+</a></p>
+<h2 id="step-14-send-an-acknowledgment-to-the-client">Step 14: Send an acknowledgment to the client<a class="headerlink" href="#step-14-send-an-acknowledgment-to-the-client" title="Permanent link">&para;</a></h2>
+<h3 id="add-the-write-action_1">Add the write action<a class="headerlink" href="#add-the-write-action_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Select the <strong>+</strong> icon at the bottom of the main flow, after the <strong>Log Info</strong> node.</li>
+<li>Select <strong>caller</strong> from the <strong>Connections</strong> list.</li>
+<li>Select <strong>writeBytes</strong> from the list of actions.</li>
+</ol>
+<h3 id="configure-the-acknowledgment-message">Configure the acknowledgment message<a class="headerlink" href="#configure-the-acknowledgment-message" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Enter <code>string Sent: ${message}. Enter your next message:.toBytes()</code> in the <strong>data</strong> field.</li>
+<li>Select <strong>Save</strong>.</li>
+</ol>
+<p><a href="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/send-acknowledgement.gif">
+   <img
+      src="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/send-acknowledgement.gif"
+      alt="Send acknowledgment"
+      width="80%"
+   />
+</a></p>
+<h2 id="step-15-run-and-test-the-application">Step 15: Run and test the application<a class="headerlink" href="#step-15-run-and-test-the-application" title="Permanent link">&para;</a></h2>
+<h3 id="run-the-application">Run the application<a class="headerlink" href="#run-the-application" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Select the <strong>Run</strong> icon (green play button) in the top-right corner of the editor to start the service.</li>
+<li>Wait for the terminal to indicate that the service is running.</li>
+</ol>
+<h3 id="test-the-chat-flow">Test the chat flow<a class="headerlink" href="#test-the-chat-flow" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Open a new terminal window.</li>
+<li>Enter <code>telnet localhost 3000</code> to connect to the chat service.</li>
+<li>When the connection is established, enter a username (e.g., <code>User1</code>).</li>
+<li>Verify that you receive the welcome message: <code>Welcome User1! Enter your message:</code>.</li>
+<li>Enter a chat message (e.g., <code>Hello World</code>).</li>
+<li>Verify that you receive the acknowledgment: <code>User1: Hello World</code>.</li>
+</ol>
+<p><a href="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/run-and-test-application.gif">
+   <img
+      src="https://wso2.github.io/docs-bi/assets/integration-guides/usecases/tcp-chat-service/img/run-and-test-application.gif"
+      alt="Run and test application"
+      width="80%"
+   />
+</a></p>
+<details class="tip" open="open"><summary>Note</summary><p>You have successfully created a TCP chat service that can handle multiple concurrent client connections in real time.</p>
+</details>
 
 
 
@@ -9115,7 +10005,7 @@ service / on httpDefaultListener {
               href="https://github.com/wso2/product-ballerina-integrator/issues">Head over to GitHub</a>
           </div>
           <div class="md-footer__meta-section__link md-footer__meta-section__link--composite">
-            <img src="../../assets/images/favicon.png" alt="Enterprise Support" width="14" height="14" style="vertical-align:middle; margin-right:6px;" />
+            <img src="../../../../assets/images/favicon.png" alt="Enterprise Support" width="14" height="14" style="vertical-align:middle; margin-right:6px;" />
             <label>Need support?</label><a target="_blank" rel="noopener noreferrer"
               href="https://wso2.com/subscription/">Enterprise Support</a>
           </div>
@@ -9152,16 +10042,16 @@ service / on httpDefaultListener {
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.path", "navigation.top", "navigation.footer", "navigation.instant.progress", "content.code.copy", "content.action.edit", "content.action.view", "content.tabs.link", "search.suggest", "search.share"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.indexes", "navigation.path", "navigation.top", "navigation.footer", "navigation.instant.progress", "content.code.copy", "content.action.edit", "content.action.view", "content.tabs.link", "search.suggest", "search.share"], "search": "../../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fc8c2696.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.fc8c2696.min.js"></script>
       
-        <script src="../../assets/lib/json-formatter/json-formatter.umd.js"></script>
+        <script src="../../../../assets/lib/json-formatter/json-formatter.umd.js"></script>
       
-        <script src="../../assets/lib/highlightjs/highlight.min.js"></script>
+        <script src="../../../../assets/lib/highlightjs/highlight.min.js"></script>
       
-        <script src="../../assets/js/theme.js"></script>
+        <script src="../../../../assets/js/theme.js"></script>
       
     
   </body>
