@@ -1,3 +1,8 @@
+---
+title: "Observe metrics using Prometheus"
+description: "Configuring Prometheus for monitoring and alerting in your integration environment."
+---
+
 # Observe metrics using Prometheus
 
 The sample [shop service](/observability-and-monitoring/supported-observability-tools-and-platforms/overview/#example-observing-a-sample-integration-service) will be used in this guide. Follow the steps given below to observe BI metrics in [Prometheus](https://prometheus.io/).
@@ -71,7 +76,7 @@ host="0.0.0.0"
 ```
 
 Configuration key | Description | Default value | Possible values 
---- | --- | --- | --- 
+---
 `ballerinax.prometheus.port` | The value of the port to which the '/metrics' service will bind. This service will be used by Prometheus to scrape the information of the BI service. | `9797` | Any suitable value for port 0 - 65535. However, within that range, ports `0` - `1023` are generally reserved for specific purposes. Therefore, it is advisable to select a port outside that range. 
 `ballerinax.prometheus.host` | The name of the host to which the '/metrics' service will bind. This service will be used by Prometheus to scrape the information of the BI service. | `0.0.0.0` | IP or Hostname or `0.0.0.0` of the node in which the BI service is running.
 

@@ -1,3 +1,8 @@
+---
+title: "Supported Observability Tools and Platforms"
+description: "Summary of the various third-party observability tools supported by the platform."
+---
+
 # Supported Observability Tools and Platforms
 
 Observability is a measure of how well the internal states of a system can be understood from its external outputs.
@@ -179,7 +184,7 @@ tracingProvider=<TRACING_PROVIDER>
 ```
 
 Configuration key | Description | Default value | Possible values 
---- | --- | --- | --- 
+---
 `ballerina.observe.metricsEnabled` | Whether metrics monitoring is enabled (true) or disabled (false) | false | `true` or `false`
 `ballerina.observe.metricsReporter` | Reporter name that reports the collected Metrics to the remote metrics server. This is only required to be modified if a custom reporter is implemented and needs to be used. | `None` | `prometheus`, `newrelic`, or if any custom implementation, the name of the reporter.
 `ballerina.observe.tracingEnabled` | Whether tracing is enabled (true) or disabled (false) | false | `true` or `false`

@@ -1,3 +1,8 @@
+---
+title: "Observe tracing using Zipkin"
+description: "How to use Zipkin for tracing requests across distributed integration components."
+---
+
 # Observe tracing using Zipkin
 
 The sample [shop service](/observability-and-monitoring/supported-observability-tools-and-platforms/overview/#example-observing-a-sample-integration-service) will be used in this guide. Follow the steps given below to observe BI tracing in [Zipkin](https://zipkin.io/).
@@ -55,7 +60,7 @@ reporterBufferSize=10000
 The table below provides the descriptions of each configuration option and possible values that can be assigned.
 
 Configuration key | Description | Default value | Possible values 
---- | --- | --- | --- 
+---
 ballerinax.zipkin. agentHostname | Hostname of the Zipkin agent | localhost | IP or hostname of the Zipkin agent. If it is running on the same node as Ballerina, it can be localhost. 
 ballerinax.zipkin. agentPort | Port of the Zipkin agent | 4317 | The port on which the Zipkin agent is listening.
 ballerinax.zipkin. samplerType | Type of the sampling methods used in the Zipkin tracer. | const | `const`, `probabilistic`, or `ratelimiting`.

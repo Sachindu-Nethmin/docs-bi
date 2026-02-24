@@ -1,3 +1,8 @@
+---
+title: "Observe tracing using Jaeger"
+description: "Setting up Jaeger for distributed tracing and performance analysis."
+---
+
 # Observe tracing using Jaeger
 
 The sample [shop service](/observability-and-monitoring/supported-observability-tools-and-platforms/overview/#example-observing-a-sample-integration-service) will be used in this guide. Follow the steps given below to observe tracing for BI application in [Jaeger](https://www.jaegertracing.io/).
@@ -56,7 +61,7 @@ reporterBufferSize=1000
 The table below provides the descriptions of each configuration option and possible values that can be assigned.
 
 Configuration key | Description | Default value | Possible values 
---- | --- | --- | --- 
+---
 ballerinax.jaeger. agentHostname | Hostname of the Jaeger agent | localhost | IP or hostname of the Jaeger agent. If it is running on the same node as BI, it can be localhost. 
 ballerinax.jaeger. agentPort | Port of the Jaeger agent | 4317 | The port on which the Jaeger agent is listening.
 ballerinax.jaeger. samplerType | Type of the sampling methods used in the Jaeger tracer. | const | `const`, `probabilistic`, or `ratelimiting`.

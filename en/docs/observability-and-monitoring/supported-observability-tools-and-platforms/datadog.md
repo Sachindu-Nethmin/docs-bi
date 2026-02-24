@@ -1,3 +1,8 @@
+---
+title: "Observe metrics and tracing using Datadog"
+description: "Using Datadog to monitor the health and performance of your integrations."
+---
+
 # Observe metrics and tracing using Datadog
 
 The sample [shop service](/observability-and-monitoring/supported-observability-tools-and-platforms/overview/#example-observing-a-sample-integration-service) will be used in this guide. Follow the steps given below to observe BI tracing and metrics in [Datadog](https://www.datadoghq.com/).
@@ -135,7 +140,7 @@ reporterBufferSize=1000
 The table below provides the descriptions of each configuration option and possible values that can be assigned.
 
 Configuration key | Description | Default value | Possible values 
---- | --- | --- | --- 
+---
 ballerinax.prometheus. port | The value of the port to which the '/metrics' service will bind. This service will be used by Prometheus to scrape the information of the Ballerina service. | `9797` | Any suitable value for port 0 - 0 - 65535. However, within that range, ports 0 - 1023 are generally reserved for specific purposes, therefore it is advisable to select a port without that range. 
 ballerinax.prometheus. host | The name of the host to which the '/metrics' service will bind. This service will be used by Prometheus to scrape the information of the Ballerina service. | `0.0.0.0` | IP or Hostname or 0.0.0.0 of the node in which the Ballerina service is running.
 ballerinax.jaeger. agentHostname | Hostname of the Jaeger agent | localhost | IP or hostname of the Jaeger agent. If it is running on the same node as Ballerina, it can be localhost. 
