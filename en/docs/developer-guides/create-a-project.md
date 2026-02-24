@@ -1,3 +1,8 @@
+---
+title: "Create a Project"
+description: ""
+---
+
 # Create a Project
 
 A project in WSO2 Integrator: BI is the foundational workspace where you define, organize, and manage all your integration artifacts—such as services, data mappings, and connections.

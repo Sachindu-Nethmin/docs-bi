@@ -1,3 +1,8 @@
+---
+title: "File Integration With Directory Service"
+description: ""
+---
+
 # File Integration With Directory Service
 
 In this section, we will learn how to create a file integration using the WSO2 Integrator: BI. 
