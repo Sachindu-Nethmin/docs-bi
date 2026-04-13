@@ -66,7 +66,7 @@ The WSO2 Integrator: BI runtime is tested with the following JREs:
 | JRE         |Versions|
 |-------------|--------|
 | CorrettoJRE | 21 |
-| AdoptOpenJRE | 21 |
+| Temurin | 21 |
 | OpenJRE     | 21 |
 | Oracle JRE  | 21 |
 
